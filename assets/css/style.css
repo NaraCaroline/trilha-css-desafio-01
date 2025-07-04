@@ -6,6 +6,7 @@
 
 body {
   background-color: black;
+  font-family: 'Raleway', sans-serif;
 }
 
 * {
@@ -31,7 +32,6 @@ body {
 }
 
 .banner h1 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 40px;
   background: var(--gradient-blue);
@@ -45,7 +45,6 @@ body {
   text-align: center;
   width: 550px;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 
 .banner p {
@@ -54,16 +53,23 @@ body {
 }
 
 .banner-content button {
-  color: #31A8DD;
-  font-size: 1rem;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.21em;
+  color: transparent;
+  background: transparent;
+  background-image: var(--gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  border: 2px solid;
+  border-image: var(--gradient-blue) 1;
+  border-radius: 0;
+  padding: 16px 32px;
+  cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  background-color: transparent;
-  border-image: var(--gradient-blue);
-  border-image-slice: 10;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+  transition: background 0.2s, color 0.2s;
 }
 
 #course-content {
@@ -71,14 +77,12 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #222;
   margin-top: 5%;
   padding-bottom: 5%;
   border-bottom: 1px solid #33A8DB80;
 }
 
 #course-content h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 32px;
   color: #fff;
@@ -92,7 +96,6 @@ body {
 }
 
 #course-content p {
-  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -114,7 +117,6 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 32px;
   margin: 40px 0 0 40px;
@@ -130,10 +132,16 @@ body {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #33A8DB80;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 #professional-challenges h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 32px;
   color: #fff;
@@ -147,12 +155,33 @@ body {
 }
 
 #professional-challenges p {
-  font-family: 'Raleway', sans-serif;
-  color: white;
+  color: #fff;
 }
 
 footer {
   color: #fff;
   text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  border-top: 1px solid #33A8DB80;
+}
+
+#course-content .modules-list {
+  margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+  color: white;
+  width: 530px;
+  margin: 0 auto 24px;
+  border: 1px solid #33A8DB;
+  background-color: #252525;
+  padding: 16px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+#course-content .modules-list .module span {
+  color: #33A8DB;
 }
 
